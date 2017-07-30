@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		
+		<title>Arbre Pythagoricien</title>
+
+		<style type="text/css">
+			body { background:#efefef;overflow:hidden;box-sizing:border-box;font-family:sans-serif; }
+			* { outline:none; }
+			form { position:absolute;z-index:2;left:0;top:0;width:100%;background:rgba(0, 0, 0, 0.6);padding:10px;color:#fff;text-align:center; }
+			form input[type=text] { padding:5px; }
+			div.element { display:inline-block;padding:0 20px;position:relative; }
+			div.element span.infos { font-size:0.8em;font-weight:bold; }
+			span.nombreCarre { position:absolute;top:80px;left:10px;font-size:1.3em; }
+		</style>
+
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+
+	<body>
+		<form action="#" method="post">
+			<div class="element">Taille du premier carré <span class="infos taille">[ 150px ]</span> : <input type="range" name="taille" value="150" max="300" min="10" step="10"></div>
+			<div class="element">Angle <span class="infos angle">[ 1 ]</span> : <input type="range" name="angle" value="45" max="85" min="5" step="1"></div>
+			<div class="element">Nombre <span class="infos nombre">[ 1 ]</span> : <input type="range" name="nombre" value="1" max="15" min="1" step="1"></div>
+		</form>
+
+		<span class="nombreCarre">Nombre de carrés : <span class="valeur">1</span></span>
+
+		<canvas id="canvas"></canvas>
+	</body>
+</html>
